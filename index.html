@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>hello world</title>
-</head>
-<body>
-ho are u buddyu buddy you buddy!!!
-</body>
+<html ng-app='LunchCheck'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Dependency Injection in Javascript
+           (and AngularJS)</title>
+  </head>
+  <body>
+    <h1>Dependency Injection in Javascript
+        (and AngularJS)</h1>
+    <div id="d1" ng-controller='LunchCheckController'>
+             <input id="t1" type="textbox" ng-model="food">{{message}}
+             <br>
+             <button ng-click="count();">Check if Too Much</button>
+    </div>
+  </body>
 </html>
